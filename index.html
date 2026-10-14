@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kivi, paber, käärid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+        <h1>Kivi, paber, käärid </h1>
+
+        <div class="scoreboard">
+            <div>
+                <h3>Sina</h3>
+                <p id="player-score">0</p>
+            </div>
+            <div>
+                <h3>Arvuti</h3>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+
+        <h2>Vali oma käik!</h2>
+
+        <div class="choices">
+            <button onclick="play('kivi')"><span>Kivi</span></button>
+            <button onclick="play('paber')"><span>Paber</span></button>
+            <button onclick="play('käärid')"><span>Käärid</span></button>
+        </div>
+
+        <div class="result">
+            <p id="player-choice">Sinu valik: -</p>
+            <p id="computer-choice">Arvuti valik: -</p>
+            <h2 id="result-text">Alusta mängu!</h2>
+        </div>
+
+        <button class="reset" onclick="resetGame()">
+             Alusta uuesti
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
